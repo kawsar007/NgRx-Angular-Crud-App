@@ -1,0 +1,47 @@
+<div class="container mt-2">
+    <div class="row">
+       <div class="col col-md4 p-2">
+          <a routerLink="/add" class="btn btn-dark">Add Teacher</a>
+       </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let teacher of teachers$ | async">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Name: {{teacher.name}}</h5>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Email: {{teacher.email}}</li>
+                <li class="list-group-item">Mobile 1: {{teacher.mobile_1}}</li>
+                <li class="list-group-item">Mobile 2: {{teacher.mobile_2}}</li>
+                <li class="list-group-item">Address: {{teacher.address}}</li>
+                <li class="list-group-item">Occapation: {{teacher.occapation}}</li>
+                <li class="list-group-item">Birthdat: {{teacher.birthday}}</li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <a class="btn btn-dark" [routerLink]="['/edit',teacher.id]">Update</a> |
+              <button type="button" class="btn btn-dark" (click)="openDeleteModal(teacher.id)">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete Confirmation</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure to delete this teacher?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" (click)="confirmDelete()">Confirm Delete</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="container">
+    <legend>Add A New Teacher</legend>
+    <div class="mb-3">
+        <label for="textName" class="form-label">
+            Name of Teacher
+        </label>
+        <input type="text" [(ngModel)]="teacherForm.name" class="form-control" id="textName" placeholder="name">
+    </div >
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" [(ngModel)]="teacherForm.email" class="form-control" id="email" placeholder="Enter email">
+    </div >
+
+    <div class="mb-3">
+        <label for="mobile_1" class="form-label">Mobile 1</label>
+        <input type="number" [(ngModel)]="teacherForm.mobile_1" class="form-control" id="mobile_1" placeholder="Mobile 1">
+    </div >
+
+    <div class="mb-3">
+        <label for="mobile_2" class="form-label">Mobile 2</label>
+        <input type="number" [(ngModel)]="teacherForm.mobile_2" class="form-control" id="mobile_2" placeholder="Mobile 2">
+    </div >
+
+    <div class="mb-3">
+        <label for="address" class="form-label">Address</label>
+        <input type="text" [(ngModel)]="teacherForm.address" class="form-control" id="address" placeholder="Address">
+    </div >
+
+    <div class="mb-3">
+        <label for="occapation" class="form-label">Occapation</label>
+        <input type="text" [(ngModel)]="teacherForm.occapation" class="form-control" id="occapation" placeholder="Occapation">
+    </div >
+
+    <div class="mb-3">
+        <label for="birthday" class="form-label">Birthday</label>
+        <input type="text" [(ngModel)]="teacherForm.birthday" class="form-control" id="birthday" placeholder="Birthday">
+    </div >
+    <button type="button" class="btn btn-dark" routerLink="/" (click)="save()">Create</button>
+</div>

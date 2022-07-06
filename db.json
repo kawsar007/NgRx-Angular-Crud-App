@@ -1,0 +1,54 @@
+{
+  "teachers": [
+    {
+      "id": 111,
+      "name": "Shamim Hossainedrfghjkl",
+      "email": "shamim82@gmail.com",
+      "mobile_1": 54767654,
+      "mobile_2": 74563545,
+      "address": "Magura, Barisal",
+      "occapation": "Manager",
+      "birthday": "23/12/1988"
+    },
+    {
+      "id": 157946,
+      "name": "Abu bakkar Siddik",
+      "email": "kawsarmia@tetonelectronics.com",
+      "mobile_1": 8868678978098,
+      "mobile_2": 887697878,
+      "address": "Gazirchar, Bajitpur",
+      "occapation": "Teacher",
+      "birthday": "2022-07-05T19:36:54.330Z"
+    },
+    {
+      "id": 157948,
+      "name": "Kaden Kramer",
+      "email": "terykopom@mailinator.com",
+      "mobile_1": 85,
+      "mobile_2": 29,
+      "address": "Qui est sunt est fu",
+      "occapation": "Fugiat in itaque au",
+      "birthday": "7"
+    },
+    {
+      "id": 157949,
+      "name": "Chase Bradford Jack",
+      "email": "syzuzob@mailinator.com",
+      "mobile_1": 25,
+      "mobile_2": 72,
+      "address": "Praesentium expedita",
+      "occapation": "Culpa eum ut esse ",
+      "birthday": "15/12/1988"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
